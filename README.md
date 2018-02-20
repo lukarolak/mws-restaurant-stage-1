@@ -30,4 +30,6 @@ add to STYLES:
   `clear: both;
   content: "";
   display: block`
+### How to refresh styles in chrome browser:
+press `Ctrl + F5`
 
