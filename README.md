@@ -26,13 +26,13 @@ Most of the code in this project has been written to the ES6 JavaScript specific
 
 # What I learned:
 
-### How to keep background elemets within child elements when viewport size is constantly changing:
+  ### How to keep background elemets within child elements when viewport size is constantly changing:
 
 add to STYLES: 
   `clear: both;
   content: "";
   display: block`
-### How to refresh styles in chrome browser:
+  ### How to refresh styles in chrome browser:
 
 press `Ctrl + F5`
 
