@@ -135,7 +135,10 @@ createReviewHTML = (review) => {
 
   return li;
 }
-
+function RefreshCurrentPage() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 /**
  * Add restaurant name to the breadcrumb navigation menu
  */
@@ -143,6 +146,8 @@ fillBreadcrumb = (restaurant=self.restaurant) => {
   const breadcrumb = document.getElementById('breadcrumb');
   const li = document.createElement('li');
   li.innerHTML = restaurant.name;
+  li.onclick = function(){RefreshCurrentPage()}
+  li.style.color = "blue";
   breadcrumb.appendChild(li);
 }
 
